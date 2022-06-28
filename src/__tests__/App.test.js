@@ -44,7 +44,7 @@ describe("Adopting pets", () => {
 
     const buttons = await screen.findAllByText(/Adopt pet/);
     const button = buttons[0];
-
+    
     fireEvent.click(button);
 
     expect(button.textContent).toContain("Already adopted");
